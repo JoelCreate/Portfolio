@@ -23,8 +23,13 @@ body{
 }
 
 .title{
-    margin: auto;
+    margin: 25vh auto auto auto;
     text-align: center;
+}
+
+h1{
+    letter-spacing: 4px;
+    margin: 0px;
 }
 
 #gif{
