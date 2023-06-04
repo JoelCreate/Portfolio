@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joel's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- My Styles -->
+        <link rel="stylesheet" href="style.css">               
+    </head>
+    <body> 
+         
+        <header>
+            <div class="logo"></div>            
+            <nav>
+                <ul class="desktop-nav">
+                  <li><a href="#header">home</a></li>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#portfolio">projects</a></li>                  
+                  <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+                <ul class="mobile-menu animate__animated animate__slideInLeft animate__faster">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#portfolio">projects</a></li>                  
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                </div>
+        </header>
+  
+        <section id="header" class="section-container">            
+            <div class="left">
+                <div class="left-container">
+                    <div class="header-msg">
+                        <h1 class="h1-primary">Hey there!<br> 
+                        I'm Joel,<br>
+                        a front end<br>
+                        <span class="highlight">web developer.</span></h1>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://joelcodes.co/documents/JoelWiesner_Resume.pdf">                            
+                            <button class="btn btn-primary">resume</button>
+                        </a>
+                        <a href="#contact">
+                            <button class="btn btn-secondary">contact</button>
+                        </a>
+                    </div>
+                </div>
+            </div>                           
+            
+            <div class="right">
+                <div class="right-container">
+                    <div class="header-pic">
+                        <div id="selfie"></div>
+                        <div id="star-shape">let's work<br>together!</div>
+                    </div>
+                </div>
+            </div>          
+        </section>
+
+        <section id="about" class="section-container">
+                <div class="left">
+                    <div class="left-container">
+                        <div class="about-msg">
+                            <h1 class="h1-secondary">A little<br>about me</h1>
+                        </div>
+                        <div class="about-icons">
+                            <i class="fa-brands fa-2xl fa-html5"></i>
+                            <i class="fa-brands fa-2xl fa-css3-alt"></i>
+                            <i class="fa-brands fa-2xl fa-js"></i>
+                            <i class="fa-brands fa-2xl fa-react"></i>
+                            <i class="fa-brands fa-2xl fa-github"></i>
+                            <i class="fa-brands fa-2xl fa-shopify"></i>
+                        </div>
+                    </div>
+                </div>
+                                            
+                <div class="right">
+                    <div class="right-container">
+                        <p class="about-info">Hi there, I'm Joel! I'm a self-taught web developer 
+                            who learned to code using Scrimba, an interactive online learning platform. 
+                            Through Scrimba, I gained a strong foundation in frontend languages like HTML, CSS, JavaScript, and React
+                            which allowed me to bring beautiful and functional websites to life. Creating engaging user interfaces
+                            with the art of responsive design.<br><br>
+
+                            In addition to frontend development, 
+                            I've also honed my skills in e-commerce by learning how to use Shopify. With previous experience running my own online stores.<br><br>
+                            
+                            Let's build something amazing together!
+                        </p>
+                    </div>
+                </div>           
+        </section>
+
+        <section id="portfolio" class="section-container">
+            <h1 class="h1-primary">Projects</h1>
+
+            <div class="carousel">
+                <!-- images from unsplash.com -->
+                <div class="carousel-cell">
+                    <h3>Responsive Blog Using CSS Flexbox and Grid</h3>
+                    <a href="https://joel-learning-journal.netlify.app/" target="_blank">
+                        <img src="./img/learningJournal_v1.png" alt="responsive blog website" />
+                    </a>
+                </div>                
+                <div class="carousel-cell">
+                    <h3>Shopify Website for<br>As Of Latte</h3>
+                    <a href="https://asoflattetest.myshopify.com/" target="_blank">
+                        <img src="./img/AOLshopifyWebsite.png" alt="Shopify Website Design for As Of Latte" />
+                    </a>
+                </div>  
+                <div class="carousel-cell">
+                    <h3>Mobile Shopping List App Using Firebase database</h3>
+                    <a href="https://shopping-with-friends.netlify.app/" target="_blank">
+                        <img src="./img/shoppingApp.png" alt="mobile shopping list app usig firebase" />
+                    </a>
+                </div>            
+            </div>       
+        </section>
+
+        <section id="contact" class="section-container">
+            <h1 class="h1-primary">Contact</h1>
+
+            <form id="contactform" action="https://formsubmit.co/j.wiesner88@gmail.com" method="POST">
+                <input name="name" type="text" id="name" placeholder="Name" required>
+                <input name="email" type="email" id="email" placeholder="Email Address" required>
+                <input type="hidden" name="_next" value="https://joelcodes.co/thank-you.html">
+                <textarea name="comment" id="comment" rows="5" placeholder="Message" required></textarea>  
+                <input id="submit" value="submit" type="submit"> 
+            </form>
+        </section>
+
+        <footer>
+            <p>Made with <i class="fa-solid fa-code"></i> by Joel Wiesner | &copy; 2023</p>
+        </footer>        
+        
+        <script src="script.js"></script>
+    </body>
+</html>
