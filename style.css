@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-
+ 
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +23,8 @@ body {
 
 #thankyou a {
     color: #ffffee;
-    text-decoration: none;
+    font-size: 1.5em;
+    text-decoration: underline;
 }
 
 .h1-primary {
@@ -232,11 +233,11 @@ header nav {
 
 .carousel {
    display: flex;
+   justify-content: flex-start;
    flex-flow: row nowrap;  
    gap: 1em;
    overflow-x: scroll;
-   max-width: 85vw;
-   margin: 20px auto;
+   width: 85vw; 
 }
 
 .carousel-cell {
@@ -275,7 +276,30 @@ background: transparent;
 .carousel::-webkit-scrollbar-thumb {
     background: #6e5422; 
     border-radius: 10px;
-}
+} 
+
+.dots {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    background: gray;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+  
+  .active-dot {
+    background: #3f3f3f;
+    cursor: default;
+  }
 
 
 #contactform {
