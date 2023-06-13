@@ -233,10 +233,11 @@ header nav {
 
 .carousel {
    display: flex;
-   justify-content: flex-start;
-   flex-flow: row nowrap;  
+   justify-content: center;
+   align-items: center;
+   flex-flow: column;  
    gap: 1em;
-   overflow-x: scroll;
+   /* overflow-x: scroll; */
    width: 85vw; 
 }
 
@@ -263,7 +264,7 @@ header nav {
 }
 
 
-.carousel::-webkit-scrollbar {    
+/* .carousel::-webkit-scrollbar {    
     background: #AE9362;    
     border-radius: 15px;
     width: 20px;
@@ -276,7 +277,7 @@ background: transparent;
 .carousel::-webkit-scrollbar-thumb {
     background: #6e5422; 
     border-radius: 10px;
-} 
+}  */
 
 .dots {
     position: absolute;
@@ -422,8 +423,15 @@ footer {
         line-height: 1.5;
     }
    
+    .carousel {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90vw;
+        gap: 1.5em;
+    }
+
     .carousel-cell {
-        width: 80vw;
+        width: 40vw;
         height: auto;
     }
     
