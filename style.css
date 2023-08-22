@@ -427,6 +427,7 @@ footer {
         flex-wrap: wrap;
         width: 90vw;
         gap: 2em;
+        align-items: flex-end;
     }
 
     .carousel-cell {
@@ -436,7 +437,7 @@ footer {
     
     .carousel-cell h3 {
         font-size: 1.75em;
-        width: 450px;
+        max-width: 35vw;
     }
 
     .carousel-cell img { 
