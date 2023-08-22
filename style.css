@@ -242,7 +242,6 @@ header nav {
 }
 
 .carousel-cell {
-    width: 400px; 
     height: auto;
     text-align: center;
 }
@@ -431,7 +430,7 @@ footer {
     }
 
     .carousel-cell {
-        width: 40vw;
+        width: 35vw;
         height: auto;
     }
     
