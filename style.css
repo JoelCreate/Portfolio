@@ -426,7 +426,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         width: 90vw;
-        gap: 1.5em;
+        gap: 2em;
     }
 
     .carousel-cell {
